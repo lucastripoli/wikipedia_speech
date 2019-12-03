@@ -1,11 +1,8 @@
 {
 	"status" : {
-
 		"success" : "success",
 		"failed" : "failed"
-
 	} ,
-
 
 	"wikipedia":{
 		"url" : "https://pt.wikipedia.org/w/api.php",
@@ -22,13 +19,16 @@
 	},
 
 	"sequelize":{
-
 		"dialect" : "sqlite",
 		"storage" : "./db.sqlite",
 		"username": "root",
         "password": "root",
         "database": "root"
+	},
 
+	"amazonpolly" :{
+		"OutputFormat" : "mp3",
+		"VoiceId" : "Ricardo",
+		"LanguageCode" : "pt-BR"
 	}
-
 }

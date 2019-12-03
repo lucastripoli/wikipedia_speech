@@ -15,5 +15,9 @@ router.get('/wikipedia', wikipedia_controller.allWikiSpeechs);
 //router.get('/wikipedia/create', wikipedia_controller.addWikiSpeechs);
 router.get('/wikipedia/request/:title', wikipedia_controller.requestPage);
 
+router.get('/wikipedia/createspeech/:id', wikipedia_controller.createSoundFile);
+
+router.get('/cleanDatabase', wikipedia_controller.clean);
+
 
 module.exports = router;

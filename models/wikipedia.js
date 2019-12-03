@@ -50,7 +50,9 @@ exports.query = async function(query) {
 
 	 	
 	} catch (error) {
+
     	return { status: config.status.failed , message: error };
+  	
   	}
 
 }
