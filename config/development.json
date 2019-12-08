@@ -1,0 +1,34 @@
+{
+	"status" : {
+		"success" : "success",
+		"failed" : "failed"
+	} ,
+
+	"wikipedia":{
+		"url" : "https://pt.wikipedia.org/w/api.php",
+		"parameters" : [
+			"action=query",
+			"format=json",
+			"prop=extracts",
+			"utf8=1",
+			"formatversion=2",
+			"exintro=1",
+			"explaintext=1",
+			"exsectionformat=raw"
+		]
+	},
+
+	"sequelize":{
+		"dialect" : "sqlite",
+		"storage" : "./db.sqlite",
+		"username": "root",
+        "password": "root",
+        "database": "root"
+	},
+
+	"amazonpolly" :{
+		"OutputFormat" : "mp3",
+		"VoiceId" : "Ricardo",
+		"LanguageCode" : "pt-BR"
+	}
+}
